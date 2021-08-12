@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 void update(int *a,int *b) {
     // Complete this function 
 
     int ptr1,ptr2;
     ptr1 = *a + *b;
-    ptr2 =  (*a - *b);
+    ptr2 =  abs (*a - *b);
     *a = ptr1;
     *b = ptr2;   
 }
